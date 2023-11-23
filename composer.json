@@ -1,0 +1,12 @@
+{
+    "name": "trueme/recedata",
+    "autoload": {
+        "psr-4": {
+            "TrueMe\\": "./src"
+        }
+    },
+    "require": {
+        "nesbot/carbon": "2.63.0",
+        "symfony/cache": "v5.4.31"
+    }
+}

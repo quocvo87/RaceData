@@ -48,7 +48,7 @@
             3.1.1.1 Goto RaceData folder > D:\YourFolder\RaceData
             3.1.1.2 Run composer: composer install
             3.1.1.3 Open D:\YourFolder\RaceData\data\employee.json
-                {"id":10,"name":"TrueMe","amount":1000.000}
+                {"id":10,"name":"TrueMe","amount": 1.000.000}
 
             3.1.1.4 Run for test D:\YourFolder\RaceData\index.php
                 + First: you will see
@@ -56,24 +56,24 @@
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1000000
+                      'amount' => int 1.000.000
                     D:\Projects\test\RaceData\index.php:13:
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1050000
+                      'amount' => int 1.050.000
 
                 + Second: you will see
                     D:\Projects\test\RaceData\index.php:6:
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1050000
+                      'amount' => int 1.050.000
                     D:\Projects\test\RaceData\index.php:13:
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1100000
+                      'amount' => int 1.100.000
                 + Last amount: 1.100.000
 
             3.1.1.5 Run for test D:\YourFolder\RaceData\index1.php && index2.php at the same time
@@ -82,24 +82,24 @@
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1100000
+                      'amount' => int 1.100.000
                     D:\Projects\test\RaceData\index1.php:16:
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1150000
+                      'amount' => int 1.150.000
 
                 + index2.php
                     D:\Projects\test\RaceData\index2.php:8:
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1100000
+                      'amount' => int 1.100.000
                     D:\Projects\test\RaceData\index2.php:16:
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1150000
+                      'amount' => int 1.150.000
                 + Last amount: 1.150.000 => wrong value. Because of 1.200.000 is expected value
 
             3.1.1.6 Run for test D:\YourFolder\RaceData\index3.php && index4.php at the same time
@@ -108,24 +108,24 @@
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1150000
+                      'amount' => int 1.150.000
                     D:\Projects\test\RaceData\index3.php:21:
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1200000
+                      'amount' => int 1.200.000
 
                 + index4.php
                     D:\Projects\test\RaceData\index4.php:11:
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1150000
+                      'amount' => int 1.150.000
                     D:\Projects\test\RaceData\index4.php:20:
                     array (size=3)
                       'id' => int 10
                       'name' => string 'TrueMe' (length=6)
-                      'amount' => int 1250000
+                      'amount' => int 1.250.000
 
                 + Last amount: 1.250.000 => this is expected value, when you use index3.php && index4.php so that prevent RaceData
 
